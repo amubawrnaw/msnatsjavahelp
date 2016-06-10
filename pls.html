@@ -1,0 +1,45 @@
+<html>
+    
+    <body>
+        <p>
+            From:
+        </p>
+        <p>
+            <input type="text" id = "from"></input>
+            <select>
+              <option value="PHP">PHP</option>
+              <option value="USD">USD</option>
+              <option value="JPY">JPY</option>
+              <option value="lb">lb</option>
+            </select>
+        </p>
+        <p>
+            To:
+        </p>    
+            <input type="text" id = "to" disabled value = "yes"></input>
+            <select>
+              <option value="PHP2">PHP</option>
+              <option value="USD2">USD</option>
+              <option value="JPY2">JPY</option>
+              <option value="lb2">lb</option>
+            </select>
+        </p>
+        <button onClick = "readYes()">Submit</button>
+        <p><button onClick = "history.go(0)">Clear</button></p>
+    </body>
+   
+    <script>
+        function sayYes( a,  b)
+        {
+            alert("Hi " + a + b); 
+        }
+        function readYes()
+        {
+            var a = document.getElementById("from").value,
+                b = document.getElementById("to").value;
+            sayYes(a,b);
+        }
+        
+        
+    </script>    
+</html>
